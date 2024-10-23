@@ -1,4 +1,4 @@
-package com.java.basics.com.threads_concepts;
+package com.java_basics.com.threads_concepts;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

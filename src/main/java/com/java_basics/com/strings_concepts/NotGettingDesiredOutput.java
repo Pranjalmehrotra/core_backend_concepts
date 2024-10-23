@@ -1,4 +1,4 @@
-package com.java.basics.com.strings_concepts;
+package com.java_basics.com.strings_concepts;
 
 public class NotGettingDesiredOutput {
 

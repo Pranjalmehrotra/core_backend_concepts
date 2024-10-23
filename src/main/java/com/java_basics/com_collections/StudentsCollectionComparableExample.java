@@ -1,4 +1,4 @@
-package com.java.basics.com_collections;
+package com.java_basics.com_collections;
 
 public class StudentsCollectionComparableExample implements Comparable<StudentsCollectionComparableExample> {
 	

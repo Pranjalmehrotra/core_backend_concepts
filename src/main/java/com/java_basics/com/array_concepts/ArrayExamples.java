@@ -1,4 +1,4 @@
-package com.java.basics.com.array_concepts;
+package com.java_basics.com.array_concepts;
 
 import java.util.ArrayList;
 import java.util.HashSet;

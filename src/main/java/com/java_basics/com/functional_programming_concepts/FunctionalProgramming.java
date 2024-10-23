@@ -1,4 +1,4 @@
-package com.java.basics.com.functional_programming_concepts;
+package com.java_basics.com.functional_programming_concepts;
 
 import java.util.List;
 

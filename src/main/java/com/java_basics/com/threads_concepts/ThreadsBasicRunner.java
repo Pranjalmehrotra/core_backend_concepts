@@ -47,7 +47,7 @@ Task 2 Done*/
 
 
 
-package com.java.basics.com.threads_concepts;
+package com.java_basics.com.threads_concepts;
 
 
 //Method 1 --->Implementing Thread via extending the Thread class.
