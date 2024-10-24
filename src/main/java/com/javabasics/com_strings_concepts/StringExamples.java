@@ -485,6 +485,73 @@ public class StringExamples {
 	}
 	// --------------------------------------------------------------------------------------------------
 
+	/*
+	 * //Ques 11 --->520 Leetcode Detect Capital
+	 * 
+	 * We define the usage of capitals in a word to be right when one
+	 * of the following cases holds:
+	 * 
+	 * All letters in this word are capitals, like "USA". 
+	 * All letters in this word are not capitals, like "leetcode". Only the first letter in this word is
+	 * capital, like "Google". Given a string word, return true if the usage of
+	 * capitals in it is right.
+	 */
+	
+	public static boolean detectCapitalUse(String word) {
+
+	       if(word.length() == 1){
+	        return true;
+
+	       }
+
+	       if(word.length()> 1 && word.equals(word.toUpperCase())){
+	        return true;
+	       }
+	       if(word.length()> 1 && word.equals(word.toLowerCase())){
+	        return true;
+	       }
+
+	       if(Character.isUpperCase(word.charAt(0))&& 
+	       word.substring(1).equals(word.substring(1).toLowerCase())){
+	        return true;
+	       }
+	        
+	        return false;
+
+	       }     
+	
+	//-----------------------------------------------------------------------------------------------------
+	
+	//Ques 13 --->2129. Capitalize the Title
+	
+	/*
+	 * You are given a string title consisting of one or more words separated by a
+	 * single space, where each word consists of English letters. Capitalize the
+	 * string by changing the capitalization of each word such that:
+	 * 
+	 * If the length of the word is 1 or 2 letters, change all letters to lowercase.
+	 * Otherwise, change the first letter to uppercase and the remaining letters to
+	 * lowercase. Return the capitalized title.
+	 */
+	public static String capitalizeTitle(String title) {
+        String[] splittedWords = title.split(" ");
+        String requiredWord = "";
+        for(String word:splittedWords){
+            if(word.length() == 1 || word.length() == 2){
+                word = word.toLowerCase();
+                requiredWord = requiredWord + " " + word;
+            }
+            else{
+                word = Character.toUpperCase(word.charAt(0)) + word.substring(1).toLowerCase();
+                requiredWord = requiredWord + " " + word;
+            }
+            }
+        requiredWord = requiredWord.trim();
+        return requiredWord;
+        
+    }
+	
+	
 	// CHECKING WETHER THE STRING IS A HEXADECIMAL OR NOT::
 
 	public static boolean isHexaDecimal(String str) {
