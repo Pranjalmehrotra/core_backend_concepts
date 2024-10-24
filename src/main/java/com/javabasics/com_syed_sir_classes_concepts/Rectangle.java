@@ -1,6 +1,6 @@
 package com.javabasics.com_syed_sir_classes_concepts;
 
-
+//This is the Rectangle class used for educational purpose only.
 
 public class Rectangle {
 	static int l, b;
